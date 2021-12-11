@@ -1,0 +1,14 @@
+@import "../../variables";
+
+.ant-rate {
+  color: $pink;
+}
+
+.ant-rate-star:not(:last-child) {
+  margin-right: 4px;
+}
+
+.ant-rate-star-first,
+.ant-rate-star-second {
+  color: $white;
+}

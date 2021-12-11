@@ -1,0 +1,109 @@
+@import "../../variables";
+
+.category-header {
+  margin-top: 90px;
+
+  h1 {
+    @include bold-48px;
+    color: $dark-blue;
+  }
+
+  &-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+
+    @include navbar-20px-roman;
+    color: $grey-2;
+  }
+}
+
+.category-body {
+  display: flex;
+  flex-direction: row;
+  margin-top: 22px;
+
+  .categories-sort-wrapper {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 250px;
+    height: fit-content;
+    padding: 20px;
+
+    .categories-sort {
+      margin-bottom: 30px;
+
+      h3 {
+        @include bold-18px;
+        color: $dark-blue;
+        margin-bottom: 15px;
+      }
+
+      > ul {
+        padding: 0 5px;
+        @include product-name-16px-roman;
+        color: $grey-2;
+
+        &.p-0 {
+          > li {
+            padding: 0;
+          }
+        }
+
+        &:not(:last-of-type) {
+          margin-bottom: 20px;
+        }
+
+        > li {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+          padding-left: 10px;
+
+          input {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//  Ant Design
+
+.ant-pagination{
+  display: flex;
+  flex-direction: row;
+}
+
+.ant-pagination-options {
+  display: none;
+}
+
+.ant-pagination-item {
+  border: none;
+
+  &:hover a{
+    color: black;
+  }
+}
+
+.ant-pagination-item-active a {
+  color: black;
+}
+
+.ant-pagination.mini .ant-pagination-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-pagination.mini .ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination.mini .ant-pagination-next .ant-pagination-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

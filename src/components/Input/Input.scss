@@ -1,0 +1,34 @@
+@import "../../variables";
+
+.input-container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  width: 790px;
+  height: 40px;
+  box-shadow: $shadow;
+
+  input {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    border-radius: inherit;
+    @include roman-18px;
+    color: $light-grey;
+
+    &::placeholder {
+      @include roman-18px;
+      color: $light-grey;
+    }
+
+  }
+
+  svg {
+    height: 26px;
+    width: 26px;
+    margin-right: 20px;
+    stroke: $light-grey;
+  }
+}
+

@@ -1,0 +1,53 @@
+@import '../../variables';
+
+.reviews {
+
+  h4 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 24px;
+    color: $dark-blue;
+    margin-bottom: 25px;
+  }
+
+  .review {
+    width: 1060px;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    background: $white;
+    box-shadow: 0 2px 6px rgba(106, 106, 106, 0.26);
+    border-radius: 2px;
+    padding: 20px 20px 45px 20px;
+    margin-bottom: 30px;
+  }
+
+  .reviewContainer {
+    .title {
+      display: flex;
+
+      p {
+        font-size: 18px;
+        line-height: 18px;
+        color: $grey-3;
+      }
+
+      h5 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 18px;
+        color: $dark-blue;
+        margin-right: 20px;
+        margin-bottom: 5px;
+      }
+    }
+
+    .reviewText {
+      p {
+        font-size: 18px;
+        line-height: 21px;
+        color: $grey-2;
+        margin-top: 25px;
+      }
+    }
+  }
+}

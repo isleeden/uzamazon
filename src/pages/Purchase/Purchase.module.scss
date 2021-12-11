@@ -1,0 +1,113 @@
+@import "../../variables";
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0.0005em;
+    color: $dark-blue;
+}
+
+form {
+    .inputGroup {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        &.mt0 {
+            margin-top: 0;
+        }
+        label {
+            @include roman-18px;
+            line-height: 21px;
+            height: 21px;
+            color: $dark-blue;
+        }
+        input {
+            margin-top: 10px;
+            height: 40px;
+            width: 420px;
+            padding: 0 15px;
+            border: 1px solid #bdbdbd;
+            border-radius: 2px;
+            color: $grey-2;
+        }
+
+        &.required {
+            label:after {
+                content: "*";
+                color: $gold;
+            }
+        }
+    }
+
+    button {
+        height: 46px;
+        margin-top: 35px;
+        border: 3px solid #e9456a;
+        box-sizing: border-box;
+        border-radius: 6px;
+        padding: 0 33px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 0.0005em;
+        color: #e9456a;
+    }
+}
+
+.paymentMethodWrapper {
+    padding-left: 75px;
+    border-left: 2px solid $grey-5;
+
+    .paymentMethod {
+        margin-top: 34px;
+
+        .textareaGroup {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            label {
+                margin-bottom: 10px;
+            }
+            textarea {
+                width: 420px;
+                height: 135px;
+                border: 1px solid $grey-4;
+                border-radius: 2px;
+                resize: none;
+                padding: 15px;
+                @include roman-18px;
+                color: $grey-2;
+            }
+        }
+
+        .totalAmount {
+            margin-top: 22px;
+            span {
+                @include bold-24px;
+                line-height: 24px;
+                color: $pink;
+                margin-left: 20px;
+            }
+        }
+
+        button {
+            height: 46px;
+            width: 100%;
+            margin-top: 30px;
+            background: #e9456a;
+            box-sizing: border-box;
+            border-radius: 6px;
+            padding: 0 33px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 18px;
+            letter-spacing: 0.0005em;
+            color: #fff;
+        }
+    }
+}

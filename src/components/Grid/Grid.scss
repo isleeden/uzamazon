@@ -1,0 +1,10 @@
+@import "../../variables";
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-auto-columns: minmax(250px, 1fr);
+  grid-template-rows: 364px;
+  grid-template-areas:". . . . .";
+  gap: 20px;
+}

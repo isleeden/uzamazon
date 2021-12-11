@@ -1,0 +1,66 @@
+@import "../../variables";
+
+.carousel{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  .card-wrapper{
+    width: 100%;
+
+    .card-scroll{
+      display: flex;
+    }
+  }
+}
+
+.direction {
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  height: 55px!important;
+  width: 55px!important;
+  padding: 0!important;
+  background: $white!important;
+  box-shadow: $shadow;
+  z-index: 1;
+  border-radius: 50%;
+
+  &:before, &:after{
+    content: none!important;
+  }
+
+  &.left{
+    left: 0;
+    transform: translate(-50%, -50%);
+
+    &.nc{
+      left: 10px;
+    }
+
+    svg{
+      margin-right: 2px;
+    }
+  }
+
+  &.right{
+    right: 0;
+    transform: translate(50%, -50%);
+    &.nc{
+      right: 0;
+    }
+    svg{
+      margin-left: 2px;
+    }
+
+  }
+
+  svg{
+    fill: $grey-3;
+  }
+}

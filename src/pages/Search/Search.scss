@@ -1,0 +1,23 @@
+.search-result-categories {
+    display: flex;
+    flex-direction: row;
+
+    .search-result-categories-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 60px;
+
+        .search-result-categories-preview {
+            width: 230px;
+            height: 230px;
+            padding-top: 100%;
+            margin-bottom: 25px;
+            background-position: 50% 50%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+        }
+    }
+}

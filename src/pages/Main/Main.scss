@@ -1,0 +1,122 @@
+@import "../../variables";
+
+.welcome-box {
+  width: 520px;
+  padding: 30px 70px;
+  box-sizing: border-box;
+
+  svg {
+    width: 85px;
+    height: 85px;
+  }
+
+  h1 {
+    @include section-name-36px-bold;
+    color: $dark-blue;
+    margin-top: 20px;
+  }
+
+  p {
+    @include roman-18px;
+    line-height: 21px;
+    color: $dark-blue;
+    margin-top: 4px;
+  }
+
+  button {
+    //width: 180px;
+  }
+}
+
+.main-categories {
+  display: grid;
+  grid-template-columns: repeat(5, 300px);
+  grid-template-rows: 350px;
+  gap: 25px 25px;
+}
+
+.category-card{
+  .category-preview{
+    padding-top: 250px;
+    background-position: 50% 0;
+  }
+  .category-card-body{
+    padding: 20px 16px 20px;
+    h2{
+      @include bold-24px;
+      color: $dark-blue;
+    }
+    span{
+      display: block;
+      @include product-name-16px-roman;
+      color: $pink;
+      margin-top: 10px;
+    }
+  }
+}
+
+.uzamazon-desc {
+  .desc {
+    width: 1195px;
+    padding-top: 363px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+
+  div:not(.desc) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 50px;
+    width: 385px;
+    height: 363px;
+    color: $white;
+
+    h1 {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: 0.0005em;
+      color: $white;
+    }
+  }
+}
+
+.carousel-section {
+  .data-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 341px;
+    width: 385px;
+    padding: 0 40px;
+    box-sizing: border-box;
+
+    h1 {
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: 0.0005em;
+      color: $white;
+      margin-bottom: 35px;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 28px;
+      line-spacing: 0.0005em;
+      color: $white;
+
+    }
+  }
+
+  .carousel-wrapper {
+    /* Otherwise carousel breaks visually */
+    width: 1190px; // +10px as the card has additional margin of 10px
+  }
+}
